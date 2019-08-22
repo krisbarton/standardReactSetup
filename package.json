@@ -1,32 +1,30 @@
 {
-  "name": "r-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build": "webpack"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Kris Barton",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^1.0.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "style-loader": "^0.23.0",
-    "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "css-loader": "^3.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "react-router": "^5.0.1"
   }
 }
